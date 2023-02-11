@@ -1,1 +1,45 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
+
+* {
+    padding: 0rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181719;
+    font-family: 'Crimson Pro', serif;
+    padding: 1rem;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    margin: auto 0;
+    width: 10rem;
+    border: 1px white solid;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+.navv {
+    position: absolute;
+    list-style: none;
+
+}
+
+.navv li a {
+    color: white;
+    text-decoration: none;
+}
 
