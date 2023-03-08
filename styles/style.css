@@ -1,6 +1,13 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+
+:root {
+    --mons: 'Montserrat', sans-serif;
+    --lora: 'Lora', serif;
+}
 
 * {
     padding: 0;
@@ -23,5 +30,163 @@ body {
     padding: 0.5rem;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem 0; */
+}
+
+.navv {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    justify-content: space-between;
+    height: 15rem;
+    align-items: center;
+}
+
+.navv.active {
+    display: flex;
+    opacity: 100% !important;
+}
+
+body.active {
+    opacity: 5%;
+}
+
+.navv > li > a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--mons);
+    font-weight: 700;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger > span {
+    height: 0.2rem;
+    width: 2rem;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active > span:nth-child(1) {
+    transform: rotate(42deg);
+    transform-origin: 0 0;
+}  
+
+.hamburger.active > span:nth-child(2) {
+    transform: rotate(318deg);
+    transform-origin: 0 0;
+}
+
+.hamburger.active > span:nth-child(3) {
+    display: none;
+}
 
 
+
+.heading {
+    text-align: left;
+    font-family: var(--lora);
+    font-size: 2rem;
+    margin: 3rem 0;
+    font-weight: 500;
+    padding-right: 1rem;
+}
+
+.description {
+    text-align: left;
+    width: 60%;
+    font-family: var(--mons);
+}
+
+.readmore {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--mons); 
+}
+
+.demo {
+    margin-top: 3rem;
+}
+
+.demo__pic > img {
+    width: -webkit-fill-available;
+}
+
+.tweet {
+    color: white;
+    padding: 1rem;
+    position: relative;
+    background-color: #181619;
+    top: -5rem;
+    width: 20rem;
+    left: 4rem;
+    box-shadow: black 0px 3px 3px 0px;;
+}
+
+.tweet_heading {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--mons);
+}
+
+.dp > img {
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.username {
+    font-size: 14px;
+}
+
+.job {
+    font-size: 10px;
+    opacity: 40%;
+    
+}
+
+.tweet_content {
+    font-size: 21px;
+    width: 70%;
+    font-family: VAR(--lora);
+    font-weight: 600;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 12px;
+    left: 25%;
+    font-family: var(--mons);
+    font-size: 12px;
+    color: #A9A9A9;
+}
+
+footer > a {
+    text-decoration: underline;
+    color: #A9A9A9;
+    font-weight: 700;
+}

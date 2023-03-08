@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Consultant Challenge</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/index.js"></script>
 </head>
 <body>
     <header>
@@ -15,10 +14,10 @@
             <div class="logo">
                 <p>THIS INTERIOR</p>
             </div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="hamburger" onclick="active()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
             <div class="navv">
                     <li><a href="#">Home</a></li>
@@ -43,11 +42,24 @@
             </p>
         </div>
         <div class="demo">
-            <div class="demo">
-                <!-- <img src="assets/photo1.png" alt="Room Demo"> -->
+            <div class="demo__pic">
+                <img src="assets/photo1.png" alt="Room Demo">
             </div>
             <div class="tweet">
-                <!-- <img src="assets/photo2.png" alt="Tweet"> -->
+                <div class="tweet_heading">
+                    <div class="dp">
+                        <img src="assets/photo2.png" alt="Tweet">
+                    </div>
+                    <div class="user">
+                        <p class="username">Aliza Webber</p>
+                        <p class="job">Interior Designer</p>
+                    </div>
+                    
+                </div>
+                <div class="tweet_content">
+                    Designed in 2020 by Aliza Webber
+                </div>
+                
             </div>
         </div>
     </main>
@@ -55,4 +67,5 @@
         created by <a href="https://devchallenges.io/portfolio/Nikhil-H4WK" target="_blank">H4WK</a> - devChallenges.io
     </footer>
 </body>
+<script src="scripts/index.js"></script>
 </html>
