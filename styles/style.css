@@ -18,7 +18,7 @@
 body {
     background-color: #181719;
     font-family: 'Crimson Pro', serif;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: white;
 }
 
@@ -28,13 +28,14 @@ body {
     width: 10rem;
     border: 1px white solid;
     padding: 0.5rem;
+    margin-left: 1rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 1rem 0; */
+    padding: 1rem 1rem 1rem 0;
 }
 
 .navv {
@@ -42,20 +43,26 @@ nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 35%;
-    left: 33%;
-    justify-content: space-between;
-    height: 15rem;
+    /* bottom: 53%; */
+    top: 0%;
+    height: 56.3rem;
     align-items: center;
+    width: -webkit-fill-available;
+    padding: 17rem 5rem;
+    background-color: #181719;
+    z-index: 2;
 }
 
 .navv.active {
     display: flex;
-    opacity: 100% !important;
 }
 
-body.active {
-    opacity: 5%;
+/* body.active {
+    padding: 0;
+} */
+
+.navv > li {
+    margin: 1rem 0;
 }
 
 .navv > li > a {
@@ -66,12 +73,15 @@ body.active {
     font-weight: 700;
 }
 
+
+
 .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 1.5rem;
     cursor: pointer;
+    z-index: 69;
 }
 
 .hamburger > span {
@@ -93,6 +103,10 @@ body.active {
 
 .hamburger.active > span:nth-child(3) {
     display: none;
+}
+
+main {
+    padding: 1rem;
 }
 
 
@@ -121,6 +135,7 @@ body.active {
 
 .demo {
     margin-top: 3rem;
+    /* height: 28rem; */
 }
 
 .demo__pic > img {
@@ -178,15 +193,66 @@ body.active {
 
 footer {
     position: absolute;
-    bottom: 12px;
-    left: 25%;
+    bottom: auto;
     font-family: var(--mons);
     font-size: 12px;
     color: #A9A9A9;
+    width: 100%;
+    text-align: center;
 }
 
 footer > a {
     text-decoration: underline;
     color: #A9A9A9;
     font-weight: 700;
+}
+
+
+@media screen and (min-width: 1440px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6rem;
+
+    }    
+
+    .demo__pic {
+        width: 38rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navv {
+        display: flex;
+        position: relative;
+        top: 0;
+        height: auto;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    .navv > li {
+        margin: 1rem 3rem;
+    }
+
+    .navv > li > a {
+        font-size: 20px;
+    }
+
+    footer {
+         bottom: 0;
+    }
 }
