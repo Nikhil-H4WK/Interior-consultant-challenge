@@ -253,6 +253,7 @@ footer > a {
     }
 
     footer {
-         bottom: 0;
+         bottom: 13px;
+         font-size: 13px;
     }
 }
