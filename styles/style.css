@@ -213,12 +213,12 @@ footer > a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 6rem;
+        margin: 0 6rem;
 
     }    
 
     .demo__pic {
-        width: 38rem;
+        width: 50rem;
     }
 
     .heading {
